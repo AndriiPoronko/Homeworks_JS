@@ -1,0 +1,108 @@
+/* ==========================================================================
+   Modern CSS Reset
+   ========================================================================== */
+
+/* 1. Блокова модель та обнулення відступів для всіх елементів */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Налаштування кореневих параметрів сторінки */
+html {
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* 3. Адаптивність графіки та медіа */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 4. Успадкування типографіки елементами форм */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* 5. Скидання стандартних стилів кнопок */
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* 6. Скидання маркерів списків */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 7. Базове скидання посилань */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 8. Запобігання виходу довгих слів за межі контейнерів */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Нормалізація таблиць */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 10. Доступність: відключення плавних анімацій за вимогою системи */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

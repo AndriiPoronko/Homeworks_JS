@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+  />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Навчальний центр</title>
+</head>
+<body>
+    <div class="container">
+        <div id="header" class="header">
+            <ul class="data">
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@study-center.example">info@study-center.example</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+380991234567">+38 (099) 123-45-67</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>м. Дніпро, вул. Освітня, 10</span>
+                    </li>
+            </ul>            
+            
+            <ul class="socials">
+                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://ua.linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>            
+        </div>
+        <div id="menu" class="menu">
+            <div class="logo">
+                <img src="images/logo/logo-icon-dark.png" alt="Логотип" class="logo__icon">
+                <div class="logo__text">
+                    <div class="logo__title">Навчальний центр</div>
+                    <div class="logo__subtitle">Ваш шлях у сфері ІТ</div>
+                </div>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#about" class="menu__link">Про центр</a></li>
+                <li class="menu__item"><a href="#courses" class="menu__link">Курси</a></li>
+                <li class="menu__item"><a href="#teachers" class="menu__link">Викладачі</a></li>
+                <li class="menu__item"><a href="#resources" class="menu__link">Корисні ресурси</a></li>
+                <li class="menu__item"><a href="#contacts" class="menu__link">Контакти</a></li>
+                <li class="menu__item"><span class="btn btn--primary">Записатися</span></li>
+            </ul>
+        </div>
+        <div id="main-content">
+            <section class="banner">
+                <div class="banner__content">
+                    <h1 class="banner__title">Навчальний центр <br> 
+                    для майбутніх <span class="text--primary">IT-фахівців</span></h1>
+                    <p class="banner__text">
+                        Сучасні програми навчання, практичні завдання та досвідчені викладачі допоможуть вам опанувати актуальні ІТ-професії.
+                    </p>
+
+                    <div class="banner__actions">
+                        <a href="#" class="btn btn--outline">Переглянути курси</a>
+                        <a href="#" class="btn btn--outline">Дізнатися більше</a>
+                    </div>
+                </div>
+                <div class="banner__image">
+                    <img src="images/backgrounds/hero-photo-right.png" alt="Банер з навчальним центром" class="banner__img">
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <div class="about__image">
+                    <img src="images/illustrations/about-center-illustration.png" alt="Про навчальний центр" class="about__img">
+                </div>
+
+                <div class="about__content">
+                    <h2 class="about__title">Про центр</h2>
+                    <div class="about__text">
+                        <p>Навчальний центр здійснює підготовку слухачів, які хочуть розпочати навчання у сфері інформаційних технологій або систематизувати вже наявні знання.</p>
+                        <p>Програми навчання поєднують теоретичний матеріал, практичні завдання та роботу над навчальними проектами. Особлива увага приділяється формуванню практичних навичок, необхідних для професійного розвитку в ІТ.</p>
+                    </div>
+                    <a href="#" class="btn btn--outline">Детальніше про центр</a>
+                </div>
+            </section>
+
+            <section id="courses" class="courses">
+                <h2 class="courses__title">Наші курси</h2>
+                <div class="courses__list">
+                    <div class="course-card">
+                        <img src="images/icons/courses/course-dotnet.png" alt=".NET" class="course-card__icon">
+                        <h3 class="course-card__title">Програмування .NET</h3>
+                        <p class="course-card__desc">Вивчення мови C#, основ програмування та створення застосунків на платформі .NET.</p>
+                        <a href="#" class="course-card__link">Детальніше <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="course-card">
+                        <img src="images/icons/courses/course-it-fundamentals.png" alt="IT Fundamentals" class="course-card__icon">
+                        <h3 class="course-card__title">IT Fundamentals</h3>
+                        <p class="course-card__desc">Основи штформаційних технологій, веброзробка, комп'ютерні мережі та програмування.</p>
+                        <a href="#" class="course-card__link">Детальніше <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="course-card">
+                        <img src="images/icons/courses/course-qa.png" alt="QA" class="course-card__icon">
+                        <h3 class="course-card__title">QA</h3>
+                        <p class="course-card__desc">Основи тестування програмного забезпечення, методи тестування та робота з документацією</p>
+                        <a href="#" class="course-card__link">Детальніше <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="course-card">
+                        <img src="images/icons/courses/course-english-it.png" alt="English for IT" class="course-card__icon">
+                        <h3 class="course-card__title">Англійська мова для IT</h3>
+                        <p class="course-card__desc">Професійна англійська лексика, технічна документація та спілкування в ІТ-середовищі</p>
+                        <a href="#" class="course-card__link">Детальніше <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="features__list">
+                    <div class="feature-item">
+                        <img src="images/icons/features/feature-modern-programs.png" alt="Сучасні програми" class="feature-item__icon">
+                        <h3 class="feature-item__title">Сучасні програми</h3>
+                        <p class="feature-item__text">Актуальні знання та навички, які відповідають вимогам ІТ-індустрії.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="images/icons/features/feature-practical-approach.png" alt="Практичний підхід" class="feature-item__icon">
+                        <h3 class="feature-item__title">Практичний підхід</h3>
+                        <p class="feature-item__text">Більше практики, проектів та реальних завдань.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="images/icons/features/feature-experienced-teachers.png" alt="Досвідчені викладачі" class="feature-item__icon">
+                        <h3 class="feature-item__title">Досвідчені викладачі</h3>
+                        <p class="feature-item__text">Професіонали з реальним досвідом роботи в ІТ.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="images/icons/features/feature-certificate.png" alt="Сертифікат" class="feature-item__icon">
+                        <h3 class="feature-item__title">Сертифікат</h3>
+                        <p class="feature-item__text">Після завершення курсу ви отримаєте сертифікат.</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="teachers" class="teachers">
+                <h2 class="courses__title">Наші викладачі</h2>
+                <div class="teachers__list">
+                    <div class="teacher-card">
+                        <img src="images/teachers/teacher-1-olena-kovalenko.png" alt="Олена Коваленко" class="teacher-card__img">
+                        <div class="teacher-card__info">
+                            <h3 class="teacher-card__name">Олена Коваленко</h3>
+                            <span class="teacher-card__subject">Програмування .NET</span>
+                            <p class="teacher-card__desc">Експерт з розробки на платформі .NET, викладач з 8+ років досвіду.</p>
+                            
+                            <div class="teacher-card__socials">
+                                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="teacher-card">
+                        <img src="images/teachers/teacher-2-andrii-melnyk.png" alt="Андрій Мельник" class="teacher-card__img">
+                        <div class="teacher-card__info">
+                            <h3 class="teacher-card__name">Андрій Мельник</h3>
+                            <span class="teacher-card__subject">IT Fundamentals</span>
+                            <p class="teacher-card__desc">Фахівець у сфері вебтехнологій та комп'ютерних мереж.</p>
+                            
+                            <div class="teacher-card__socials">
+                                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="images/teachers/teacher-3-maryna-shevchenko.png" alt="Марина Шевченко" class="teacher-card__img">
+                        <div class="teacher-card__info">
+                            <h3 class="teacher-card__name">Марина Шевченко</h3>
+                            <span class="teacher-card__subject">QA</span>
+                            <p class="teacher-card__desc">Тестувальник з досвідом роботи у міжнародних проєктах.</p>
+                            
+                            <div class="teacher-card__socials">
+                                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="teacher-card">
+                        <img src="images/teachers/teacher-4-iryna-bondar.png" alt="Ірина Бондар" class="teacher-card__img">
+                        <div class="teacher-card__info">
+                            <h3 class="teacher-card__name">Ірина Бондар</h3>
+                            <span class="teacher-card__subject">Англійська мова для ІТ</span>
+                            <p class="teacher-card__desc">Викладач англійської мови з досвідом роботи в ІТ-компаніях.</p>
+                            
+                            <div class="teacher-card__socials">
+                                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-blocks">
+                    <div class="info-card">
+                        <h2 class="info-card__title"  id="resources">Корисні ресурси</h2>                    
+                        <div class="info-card__content">
+                            <ul class="resources__list">
+                                <li>
+                                    <a href="#">Microsoft Learn <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#">MDN Web Docs <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#">W3Schools <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#">FreeCodeCamp <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#">Stack Overflow <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </li>
+                            </ul>                        
+                            <div class="info-card__image">
+                                <img src="images/illustrations/useful-resources-illustration.png" alt="Ресурси" class="info-card__img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card" id="contacts">
+                        <h2 class="info-card__title">Контакти</h2>                        
+                        <div class="info-card__content">
+                            <ul class="contacts__list">
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i> 
+                                    <a href="mailto:info@study-center.example">info@study-center.example</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone"></i> 
+                                    <a href="tel:+380991234567">+38 (099) 123-45-67</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i> 
+                                    <span>м. Дніпро, вул. Освітня, 10</span>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-clock"></i> 
+                                    <span>Пн – Пт: 09:00 – 18:00</span>
+                                </li>
+                            </ul>                            
+                            <div class="info-card__image">
+                                <img src="images/contacts/location-map.png" alt="Карта проїзду" class="info-card__map">
+                            </div>
+                        </div>
+                    </div>                
+            </section>
+        </div>
+        <div id="footer" class="footer">
+            <div class="footer__col footer__col--brand">
+                <a href="/" class="footer__logo">
+                    <img src="images/logo/logo-full-footer.png" alt="Навчальний центр" class="footer__logo-img">
+                </a>
+                <div class="footer__copyright">
+                    <p>© 2026 Навчальний центр.</p>
+                    <p>Усі права захищено.</p>
+                </div>
+            </div>
+            <div class="footer__col footer__col--nav">
+                <h3 class="footer__title">Навігація</h3>
+                <ul class="footer__list">
+                    <li><a href="#">Про центр</a></li>
+                    <li><a href="#">Курси</a></li>
+                    <li><a href="#">Викладачі</a></li>
+                    <li><a href="#">Корисні ресурси</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer__col footer__col--subscribe">
+                <h3 class="footer__title">Підпишіться на новини</h3>
+                <p class="footer__subtitle">Дізнавайтеся про нові курси та події першими.</p>
+                
+                <form action="#" class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" class="subscribe-form__input" required>
+                    <button type="submit" class="btn btn--primary subscribe-form__btn">Підписатися</button>
+                </form>
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://ua.linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <a href="#" class="scroll-top" aria-label="Вгору">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
